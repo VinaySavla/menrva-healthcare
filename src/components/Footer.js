@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   const whatsappNumber = '+919876543210'; // Replace with actual WhatsApp number
@@ -12,7 +13,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <img src="/MenrvaLogo.jpg" alt="Menrva Healthcare Logo" className="h-20" />
+              <Image src="/MenrvaLogo.jpg" alt="Menrva Healthcare Logo" width={80} height={80} className="h-20" />
               {/* <span className="text-xl font-bold">
                 Menrva <span className="text-blue-400">Healthcare</span>
               </span> */}
